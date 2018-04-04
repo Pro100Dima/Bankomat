@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KKB.Bank.Module
 {
-    class Account
+    public class Account
     {
         public Account()
         {
@@ -17,7 +17,7 @@ namespace KKB.Bank.Module
         public DateTime CloseDate { get; set; }
         public string AccountNumber { get; set; }
         public double Balance { get; set; } = 0;
-        public List<Cards> ListCards;
+         List<Cards> ListCards;
         public void PrintCardInfo()
         {
             foreach (Cards item in ListCards)
